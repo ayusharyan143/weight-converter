@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    background: linear-gradient(to left top, yellow, lightblue, yellow);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkcyan;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 2px 23px rgba(13, 20, 16, 1.1);
+    text-align: left; /* Center-align text */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Adjust font size and weight for better visibility */
+.navbar h3 {
+    margin-left: 3px;
+    display: block;
+    font-size: 1.9rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 15px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.container{
+    margin-top: 60px; /* Adjust as needed based on the navbar's height */
+    background: rgba(255,255,255,0.3);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    border-radius: 10px;
+    width: 85%;
+    max-width: 450px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.input{
+    padding: 10px;
+    width: 70%;
+    background: rgba(255,255,255,0.3);
+    border-color: rgba(255,255,255,0.5);
+    font-size: 18px;
+    border-radius: 10px;
+    color: darkgreen;
+    outline: none;
+}
+
+.error{
+    color: red;
+}
+
+
+@media screen and (max-width: 347px) {
+
+    body{
+        margin: 10px;
+    }
+
+    .navbar h3 {
+        font-size: 1.45rem;
+    }
+
+}
